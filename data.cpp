@@ -14,7 +14,7 @@ void read_from_file(subject &s, std::ifstream &file)
 
 }
 
-void write_in_file(const subject &s, std::ofstream &file )
+void write_in_file(const subject &s, std::ofstream &file)
 {
     file << s.FIO << "\n";
     file << s.form << "\n";

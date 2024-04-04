@@ -1,5 +1,5 @@
-Aldar Radnaev
-Ochno
-1000
-8
-10
+Aldar 
+ZaOchno
+100000
+80
+1
