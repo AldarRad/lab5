@@ -27,7 +27,6 @@ C:/Labs/lab5/build/CMakeFiles/ContinuousCoverage.dir
 C:/Labs/lab5/build/CMakeFiles/ContinuousMemCheck.dir
 C:/Labs/lab5/build/CMakeFiles/ContinuousSubmit.dir
 C:/Labs/lab5/build/CMakeFiles/lab5.dir
-C:/Labs/lab5/build/CMakeFiles/d.dir
 C:/Labs/lab5/build/CMakeFiles/package.dir
 C:/Labs/lab5/build/CMakeFiles/package_source.dir
 C:/Labs/lab5/build/CMakeFiles/test.dir

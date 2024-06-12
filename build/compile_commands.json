@@ -4,11 +4,5 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe -g -o CMakeFiles\\lab5.dir\\main.cpp.obj -c C:\\Labs\\lab5\\main.cpp",
   "file": "C:\\Labs\\lab5\\main.cpp",
   "output": "CMakeFiles\\lab5.dir\\main.cpp.obj"
-},
-{
-  "directory": "C:/Labs/lab5/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -g -o CMakeFiles\\d.dir\\data.cpp.obj -c C:\\Labs\\lab5\\data.cpp",
-  "file": "C:\\Labs\\lab5\\data.cpp",
-  "output": "CMakeFiles\\d.dir\\data.cpp.obj"
 }
 ]

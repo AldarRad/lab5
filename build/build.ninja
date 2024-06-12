@@ -215,7 +215,7 @@ build ContinuousSubmit: phony CMakeFiles/ContinuousSubmit
 #############################################
 # Order-only phony target for lab5
 
-build cmake_object_order_depends_target_lab5: phony || cmake_object_order_depends_target_d
+build cmake_object_order_depends_target_lab5: phony || CMakeFiles/lab5.dir
 
 build CMakeFiles/lab5.dir/main.cpp.obj: CXX_COMPILER__lab5_unscanned_Debug C$:/Labs/lab5/main.cpp || cmake_object_order_depends_target_lab5
   DEP_FILE = CMakeFiles\lab5.dir\main.cpp.obj.d
@@ -231,46 +231,15 @@ build CMakeFiles/lab5.dir/main.cpp.obj: CXX_COMPILER__lab5_unscanned_Debug C$:/L
 #############################################
 # Link the executable lab5.exe
 
-build lab5.exe: CXX_EXECUTABLE_LINKER__lab5_Debug CMakeFiles/lab5.dir/main.cpp.obj | libd.a || libd.a
+build lab5.exe: CXX_EXECUTABLE_LINKER__lab5_Debug CMakeFiles/lab5.dir/main.cpp.obj
   FLAGS = -g
-  LINK_LIBRARIES = libd.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\lab5.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
   TARGET_FILE = lab5.exe
   TARGET_IMPLIB = liblab5.dll.a
   TARGET_PDB = lab5.exe.dbg
-
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target d
-
-
-#############################################
-# Order-only phony target for d
-
-build cmake_object_order_depends_target_d: phony || CMakeFiles/d.dir
-
-build CMakeFiles/d.dir/data.cpp.obj: CXX_COMPILER__d_unscanned_Debug C$:/Labs/lab5/data.cpp || cmake_object_order_depends_target_d
-  DEP_FILE = CMakeFiles\d.dir\data.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\d.dir
-  OBJECT_FILE_DIR = CMakeFiles\d.dir
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target d
-
-
-#############################################
-# Link the static library libd.a
-
-build libd.a: CXX_STATIC_LIBRARY_LINKER__d_Debug CMakeFiles/d.dir/data.cpp.obj
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles\d.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = libd.a
-  TARGET_PDB = d.a.dbg
 
 
 #############################################
@@ -558,8 +527,6 @@ build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousS
 # =============================================================================
 # Target aliases.
 
-build d: phony libd.a
-
 build lab5: phony lab5.exe
 
 # =============================================================================
@@ -570,12 +537,7 @@ build lab5: phony lab5.exe
 #############################################
 # Folder: C:/Labs/lab5/build
 
-build all: phony lab5.exe libd.a
-
-# =============================================================================
-# Unknown Build Time Dependencies.
-# Tell Ninja that they may appear as side effects of build rules
-# otherwise ordered by order-only dependencies.
+build all: phony lab5.exe
 
 # =============================================================================
 # Built-in targets

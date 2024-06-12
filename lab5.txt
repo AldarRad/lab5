@@ -3,3 +3,8 @@ ZaOchno
 100000
 80
 1
+Aldar
+ZaOchno
+100000
+80
+1
